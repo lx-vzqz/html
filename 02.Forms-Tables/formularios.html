@@ -7,17 +7,31 @@
     <form action="resultados.html" method="get">
       <div>
         <label for="nombredeusuario">Nombre de usuario</label>
-        <input name="usuario" id="nombredeusuario" />
+        <input type="text" name="usuario" id="nombredeusuario" required />
       </div>
+      <br />
       <div>
         <label for="Comentarios">Comentarios</label>
         <textarea name="Comentarios" id="Comentarios"></textarea>
       </div>
+      <br />
+      <div>
+        <label for="Edad">Edad</label>
+        <input type="number" name="Edad" id="Edad" min="0" max="200" step="5"></textarea>
+      </div>
+      <br>
+      <div>
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento"></textarea>
+      </div>
+      <br />
       <div>
         <label for="password">Contraseña</label>
-        <input name="pasword" id="password" />
+        <input type="password" pasword" id="password" required />
       </div>
-      <button>Enviar</button>
+      <br />
+      <button type="reset">Reset</button>
+      <button type="submit">Enviar</button>
     </form>
   </body>
 </html>
